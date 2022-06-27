@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="estilo.css">
+    <title>Home</title>
+</head>
+<body class="bg-light">
+    <h2>Mapa teste</h2>
+    <div>
+        <iframe id="mapa" src="https://www.google.com/maps/d/u/0/embed?mid=1AuZM0bWjEM9ZbNZfvdHalO3KyDQfbIA&ehbc=2E312F" width="640" height="480"></iframe>
+    </div>
+    <div>
+        <input type="text" id="matricula" placeholder="Digite a matricula">
+        <button id="button" value="Buscar">Buscar</button>
+    </div>
+</body>
+<script>
+    
+    var buscar = document.querySelector('#button');
+
+    buscar.addEventListener('click', srcAluno);
+
+    function srcAluno(mat){
+        mat = document.querySelector('#matricula').value;
+
+        console.log(mat);
+    }
+</script>
+</html>
