@@ -3,19 +3,45 @@
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+    <link rel="stylesheet" href="css/estilo.css">
     <link rel="stylesheet" href="css/bootstrap.min.css">
-    <link rel="stylesheet" href="estilo.css">
     <title>Home</title>
 </head>
 <body class="bg-light">
-    <h2>Mapa teste</h2>
-    <div>
-        <iframe id="mapa" src="https://www.google.com/maps/d/u/0/embed?mid=1AuZM0bWjEM9ZbNZfvdHalO3KyDQfbIA&ehbc=2E312F" width="640" height="480"></iframe>
-    </div>
-    <div>
-        <input type="text" id="matricula" placeholder="Digite a matricula">
-        <button id="button" value="Buscar">Buscar</button>
+    
+    <nav class="navbar navbar-expand navbar-dark bg-dark">
+        <div class="navbar-brand">
+            <span>BuscaAtiva</span><span> GB</span>
+        </div>
+        
+        <ul class="navbar-nav ml-auto">
+            <li class="nav-item">
+                <a href="#" class="nav-link">Home</a>
+            </li>
+            <li class="nav-item">
+                <a href="sobre.html" class="nav-link">Sobre</a>
+            </li>
+        </ul>
+      
+    </nav>
+   
+    <div id="container">
+
+        <h3 class="mt-4">Sistema de geolocalização dos alunos</h3>
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Pariatur, deleniti dicta animi fuga consequatur omnis in nemo. </p>
+        
+
+
+
+
+        <div>
+            <iframe id="mapa" src="https://www.google.com/maps/d/u/0/embed?mid=1AuZM0bWjEM9ZbNZfvdHalO3KyDQfbIA&ehbc=2E312F" width="720" height="480"></iframe>
+        </div>
+        <div>
+            <input type="text" id="matricula" placeholder="Digite a matricula">
+            <button id="button" value="Buscar">Buscar</button>
+        </div>
     </div>
 </body>
 <script>
