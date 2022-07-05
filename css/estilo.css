@@ -1,28 +1,13 @@
-body {
+*{
+    margin-left: 0;
+    margin-right: 0;
+}
+
+
+#iframe-mapa iframe{
+    border: none;
     
 }
-
-
-.container {
-    text-align: center;
-}
-
-#iframe-mapa {
-    margin: 0 auto 25px auto;
-    border-style: solid;
-    border-width: 2px;
-    border-radius: 5px;
-}
-
-
-
-
-
-
-
-
-
-
 
 
 footer span {

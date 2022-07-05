@@ -10,13 +10,9 @@
 </head>
 <body class="bg-light">
     
-    <nav class="navbar navbar-expand navbar-dark bg-dark">
+    <nav class="navbar navbar-expand navbar-dark bg-success">
         <div class="navbar-brand">
             <span>BuscaAtiva</span><span> GB</span>
-        </div>
-
-        <div id="logo-gb" class="ml-auto">
-            <img src="imagens/logo-gb-white.png" alt="logo-escola" width="130"> 
         </div>
         
         <ul class="navbar-nav ml-auto">
@@ -30,22 +26,22 @@
       
     </nav>
    
-    <div class="container">
+    <div class="container-fluid">
 
-        <h3 class="mt-4">Sistema de geolocalização dos alunos</h3>
-        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Pariatur, deleniti dicta animi fuga consequatur omnis in nemo. </p>
+        <h3 class="mt-2 text-md-center">Sistema de geolocalização de alunos</h3>
+        <p class="text-sm-justify text-md-center">Este sistema contém o mapeamento completo de todos os alunos matriculados no ano letivo de 2022 na EEMTI Geraldo Benoni Gomes Silveira. </p>
         
 
 
 
 
         <div id="iframe-mapa">
-            <iframe id="mapa" src="https://www.google.com/maps/d/u/0/embed?mid=19pwYHFq2scaVxOdgUhBrYYi0GLYKubE&ehbc=2E312F" width="100%" height="520"></iframe>
+            <iframe id="mapa" src="https://www.google.com/maps/d/u/0/embed?mid=19pwYHFq2scaVxOdgUhBrYYi0GLYKubE&ehbc=2E312F" width="100%" height="520" class="border border-success rounded"></iframe>
         </div>
         
     </div>
 
-    <footer class="row ml-auto text-light bg-dark text-center">
+    <footer class="row ml-auto mt-3 text-light bg-success text-center">
         <div class="col-sm-6 py-1">
             <span class="footer-titulo">CONTATOS:</span><br>
             <img src="imagens/logo-telefone-branco.png" alt="logo-telefone" width="20">
@@ -58,20 +54,9 @@
             <img src="imagens/logo-insta-branco.png" alt="logo-instagran" width="20">
             <span>@geraldo.benoni</span>
         </div>
-        <span class="mx-auto footer-titulo">EEMTI Geraldo Benoni - Todos os Direitos Reservados</span>
+        <span class="mx-auto my-2 footer-titulo">EEMTI Geraldo Benoni - Todos os Direitos Reservados</span>
 
     </footer>
 </body>
-<script>
-    
-    var buscar = document.querySelector('#button');
 
-    buscar.addEventListener('click', srcAluno);
-
-    function srcAluno(mat){
-        mat = document.querySelector('#matricula').value;
-
-        console.log(mat);
-    }
-</script>
 </html>
